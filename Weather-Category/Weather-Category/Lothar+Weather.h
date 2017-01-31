@@ -9,5 +9,5 @@
 #import <Lothar/Lothar.h>
 
 @interface Lothar (Weather)
-- (nullable UIViewController *)Weather_aViewController;
+- (nullable UIView *)Weather_aViewWithCallback:(nullable void(^)())callback;
 @end

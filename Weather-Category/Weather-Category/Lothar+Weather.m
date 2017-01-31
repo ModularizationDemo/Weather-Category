@@ -9,7 +9,11 @@
 #import "Lothar+Weather.h"
 
 @implementation Lothar (Weather)
-- (nullable UIViewController *)Weather_aViewController {
-    return [self performTarget:@"Weather" action:@"aViewController" params:nil shouldCacheTarget:YES];
+- (nullable UIView *)Weather_aViewWithCallback:(nullable void(^)())callback {
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    if (callback) {
+        params[@"callback"] = callback;
+    }
+    return [self performTarget:@"Weather" action:@"aViewController" params:params shouldCacheTarget:YES];
 }
 @end
