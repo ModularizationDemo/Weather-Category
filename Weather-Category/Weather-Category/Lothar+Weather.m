@@ -14,6 +14,6 @@ NSNotificationName SXWeatherPageAddAnimate = @"SXWeatherPageAddAnimate";
     if (callback) {
         params[@"callback"] = callback;
     }
-    return [self performTarget:@"Weather" action:@"aViewController" params:params shouldCacheTarget:YES];
+    return [self performTarget:@"Weather" action:@"aView" params:params shouldCacheTarget:YES];
 }
 @end
