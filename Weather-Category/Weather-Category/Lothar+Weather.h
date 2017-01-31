@@ -7,7 +7,7 @@
 //
 
 #import <Lothar/Lothar.h>
-
+extern NSNotificationName _Nonnull SXWeatherPageAddAnimate;
 @interface Lothar (Weather)
 - (nullable UIView *)Weather_aViewWithCallback:(nullable void(^)())callback;
 @end

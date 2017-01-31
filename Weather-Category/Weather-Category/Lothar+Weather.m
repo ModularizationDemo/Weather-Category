@@ -7,7 +7,7 @@
 //
 
 #import "Lothar+Weather.h"
-
+NSNotificationName SXWeatherPageAddAnimate = @"SXWeatherPageAddAnimate";
 @implementation Lothar (Weather)
 - (nullable UIView *)Weather_aViewWithCallback:(nullable void(^)())callback {
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
